@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vegetable Shop</title>
+    <!-- Tailwind & UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon Link -->
+    <script src="https://kit.fontawesome.com/a630a39b02.js" crossorigin="anonymous"></script>
+    <!-- Color Set -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'pm-color': '#179800',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+      .sora-font{
+        font-family: "Sora", serif;
+      }
+      .poppins-font{
+        font-family: "Poppins", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sora-font bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <nav class="justify-between border-b-2 border-pm-color md:border-none">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <img class="w-24 h-10 ml-6 md:ml-20" src="c2-assets/logo-header.png" alt="">
+                    <div class="dropdown ml-48">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-12>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-12 ">
+                      <li><a>Product</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex -ml-14">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li tabindex="0">
+                      <a href="">Services</a>
+                    </li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                  <div class="nav-end ml-16 space-x-3">
+                   <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                   <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                   <button class="w-20 h-9 border rounded-lg border-pm-color">Login</button>
+                   <button class="w-24 h-10 border rounded-xl text-white bg-pm-color">Register</button>
+                 </div>
+                </div>
+        </nav>
+        <div class="mt-16 justify-center items-center text-center">
+            <h1 class="font-bold text-xl md:text-3xl pb-4">Freshness You <span class="text-pm-color"> Can <br>
+                Count </span>  On, Prices You’ll Love!</h1>
+            <p class="text-sm">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            <div class="ml-20 mt-6 md:ml-56 w-[65%] h-[65%]"><img src="c2-assets/hero-vegetables.png" alt=""></div>
+        </div>
+    </header>
+    
+  </body>
+</html>
